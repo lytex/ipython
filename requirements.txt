@@ -4,42 +4,176 @@
 #
 #    pip-compile requirements.in
 #
+argon2-cffi==20.1.0
+    # via notebook
+async-generator==1.10
+    # via nbclient
+attrs==21.2.0
+    # via jsonschema
 backcall==0.2.0
     # via ipython
-decorator==4.4.2
+bleach==3.3.0
+    # via nbconvert
+cffi==1.14.5
+    # via argon2-cffi
+cycler==0.10.0
+    # via matplotlib
+decorator==5.0.9
     # via ipython
+defusedxml==0.7.1
+    # via nbconvert
+entrypoints==0.3
+    # via nbconvert
+ipykernel==5.5.5
+    # via notebook
 ipython-genutils==0.2.0
-    # via traitlets
-ipython==7.22.0
-    # via -r requirements.in
+    # via
+    #   nbformat
+    #   notebook
+    #   traitlets
+ipython==7.24.0
+    # via
+    #   -r requirements.in
+    #   ipykernel
+    #   jupyterthemes
 jedi==0.18.0
     # via ipython
+jinja2==3.0.1
+    # via
+    #   nbconvert
+    #   notebook
+jsonschema==3.2.0
+    # via nbformat
+jupyter-client==6.1.12
+    # via
+    #   ipykernel
+    #   nbclient
+    #   notebook
+jupyter-core==4.7.1
+    # via
+    #   jupyter-client
+    #   jupyterthemes
+    #   nbconvert
+    #   nbformat
+    #   notebook
+jupyterlab-pygments==0.1.2
+    # via nbconvert
+jupyterthemes==0.20.0
+    # via -r requirements.in
+kiwisolver==1.3.1
+    # via matplotlib
 klembord==0.2.2
     # via -r requirements.in
-parso==0.8.1
+lesscpy==0.14.0
+    # via jupyterthemes
+markupsafe==2.0.1
+    # via jinja2
+matplotlib-inline==0.1.2
+    # via ipython
+matplotlib==3.4.2
+    # via jupyterthemes
+mistune==0.8.4
+    # via nbconvert
+nbclient==0.5.3
+    # via nbconvert
+nbconvert==6.0.7
+    # via notebook
+nbformat==5.1.3
+    # via
+    #   nbclient
+    #   nbconvert
+    #   notebook
+nest-asyncio==1.5.1
+    # via nbclient
+notebook==6.4.0
+    # via jupyterthemes
+numpy==1.20.3
+    # via matplotlib
+packaging==20.9
+    # via bleach
+pandocfilters==1.4.3
+    # via nbconvert
+parso==0.8.2
     # via jedi
 pexpect==4.8.0
     # via ipython
 pickleshare==0.7.5
     # via ipython
+pillow==8.2.0
+    # via matplotlib
+ply==3.11
+    # via lesscpy
+prometheus-client==0.10.1
+    # via notebook
 prompt-toolkit==3.0.18
     # via
     #   -r requirements.in
     #   ipython
 ptyprocess==0.7.0
-    # via pexpect
-pygments==2.8.1
-    # via ipython
+    # via
+    #   pexpect
+    #   terminado
+pycparser==2.20
+    # via cffi
+pygments==2.9.0
+    # via
+    #   ipython
+    #   jupyterlab-pygments
+    #   nbconvert
+pyparsing==2.4.7
+    # via
+    #   matplotlib
+    #   packaging
+pyrsistent==0.17.3
+    # via jsonschema
+python-dateutil==2.8.1
+    # via
+    #   jupyter-client
+    #   matplotlib
 python-xlib==0.26
     # via klembord
-six==1.15.0
-    # via python-xlib
+pyzmq==22.1.0
+    # via
+    #   jupyter-client
+    #   notebook
+send2trash==1.5.0
+    # via notebook
+six==1.16.0
+    # via
+    #   argon2-cffi
+    #   bleach
+    #   cycler
+    #   jsonschema
+    #   lesscpy
+    #   python-dateutil
+    #   python-xlib
 stopit==1.1.2
     # via klembord
+terminado==0.10.0
+    # via notebook
+testpath==0.5.0
+    # via nbconvert
+tornado==6.1
+    # via
+    #   ipykernel
+    #   jupyter-client
+    #   notebook
+    #   terminado
 traitlets==5.0.5
-    # via ipython
+    # via
+    #   ipykernel
+    #   ipython
+    #   jupyter-client
+    #   jupyter-core
+    #   matplotlib-inline
+    #   nbclient
+    #   nbconvert
+    #   nbformat
+    #   notebook
 wcwidth==0.2.5
     # via prompt-toolkit
+webencodings==0.5.1
+    # via bleach
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
